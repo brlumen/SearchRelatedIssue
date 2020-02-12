@@ -14,5 +14,6 @@
 # along with SearchRelatedIssue plugin for MantisBT.  
 # If not, see <http://www.gnu.org/licenses/>.
 
-$s_plugin_SearchRelatedIssue_header_related_issue_list = 'Die folgenden %1$s ähneln der Eingabe.';
-$s_plugin_SearchRelatedIssue_description = 'Das Plugin implementiert eine Live-Suche für ähnliche Einträge, während der Erstellung eines neuen Eintrags.';
+$s_plugin_SearchRelatedIssue_header_related_issue_list = 'Die folgenden %1$s Ã¤hneln der Eingabe.';
+$s_plugin_SearchRelatedIssue_description = 'Das Plugin implementiert eine Live-Suche fÃ¼r Ã¤hnliche EintrÃ¤ge, waehrend der Erstellung eines neuen Eintrags.';
+$s_plugin_SearchRelatedIssue_go_to = 'Gehe zu Eintrag';
