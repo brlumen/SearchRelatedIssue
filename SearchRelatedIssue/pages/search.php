@@ -1,6 +1,7 @@
 <?php
 
-# Copyright (c) 2019 brlumen (igflocal@gmail.com)
+# Original Copyright (c) 2019 brlumen (igflocal@gmail.com)
+# Modification Copyright (c) 2020 Selonka
 # SearchRelatedIssue for MantisBT is free software:
 # you can redistribute it and/or modify it under the terms of the GNU
 # General Public License as published by the Free Software Foundation,
@@ -45,10 +46,11 @@ if( count( $t_rows ) > 0 ) {
 
     $t_response['data'] = '<ul class="search_result">';
     $t_response['data'] .= '<li style="margin-left: 5px; margin-top: 5px; margin-bottom: 5px;">' . sprintf( plugin_lang_get( 'header_related_issue_list' ), lang_get( 'issues' ) ) . '</li>';
-
+    
     foreach( $t_rows as $t_issue ) {
         $t_response['data'] .= '<li>' .
-                '<a class=search_result style="background-color:' . get_status_color( $t_issue->status ) . ';" href="' . string_get_bug_view_url( $t_issue->id ) . '";>' . $t_issue->id . ": " . $t_issue->summary . '</a></li>';
+                '<div class="issue" style="background-color:' . get_status_color( $t_issue->status ) . ';" >' . $t_issue->id . ": " . $t_issue->summary . '<div class="popup">'. $t_issue->description.'</div><a href="' . string_get_bug_view_url( $t_issue->id ) . '";>' .plugin_lang_get( 'go_to' ).'</a></div></li>';
+       
     }
 
     $t_response['data'] .= '</ul>';
