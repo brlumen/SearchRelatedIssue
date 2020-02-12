@@ -16,3 +16,4 @@
 
 $s_plugin_SearchRelatedIssue_header_related_issue_list = 'The following %1$s might be related.';
 $s_plugin_SearchRelatedIssue_description = 'The plugin implements a live search for related issues during the creation of a new issue.';
+$s_plugin_SearchRelatedIssue_go_to = 'Go to';

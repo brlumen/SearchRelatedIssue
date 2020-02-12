@@ -10,6 +10,7 @@ Screenshots
 -----------
 
 ![alt text](doc/SearchRelatedIssue.png)
+![alt text](doc/description.png)
 
 Download
 --------
